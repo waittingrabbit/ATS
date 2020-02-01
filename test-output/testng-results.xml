@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="59655" started-at="2020-02-01T22:43:17Z" finished-at="2020-02-01T22:44:17Z">
+  <suite name="Suite" duration-ms="99466" started-at="2020-02-01T23:07:36Z" finished-at="2020-02-01T23:09:15Z">
     <groups>
     </groups>
-    <test name="Solutions Test Results" duration-ms="59655" started-at="2020-02-01T22:43:17Z" finished-at="2020-02-01T22:44:17Z">
+    <test name="Solutions Test Results" duration-ms="99466" started-at="2020-02-01T23:07:36Z" finished-at="2020-02-01T23:09:15Z">
       <class name="com.ats.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.qa.test.LoginPageTest@7e0ea639]" name="setUp" is-config="true" duration-ms="8177" started-at="2020-02-01T17:43:50Z" finished-at="2020-02-01T17:43:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.qa.test.LoginPageTest@7e0ea639]" name="setUp" is-config="true" duration-ms="8229" started-at="2020-02-01T18:08:48Z" finished-at="2020-02-01T18:08:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.ats.qa.test.LoginPageTest@7e0ea639]" name="loginTest" duration-ms="3567" started-at="2020-02-01T17:43:58Z" finished-at="2020-02-01T17:44:02Z">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.ats.qa.test.LoginPageTest@7e0ea639]" name="loginTest" duration-ms="3960" started-at="2020-02-01T18:08:57Z" finished-at="2020-02-01T18:09:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ats.qa.test.LoginPageTest@7e0ea639]" name="tearDown" is-config="true" duration-ms="709" started-at="2020-02-01T17:44:02Z" finished-at="2020-02-01T17:44:02Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ats.qa.test.LoginPageTest@7e0ea639]" name="tearDown" is-config="true" duration-ms="746" started-at="2020-02-01T18:09:01Z" finished-at="2020-02-01T18:09:01Z">
           <params>
             <param index="0">
               <value>
@@ -28,15 +28,15 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.ats.qa.test.LoginPageTest -->
       <class name="com.ats.qa.test.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.qa.test.HomePageTest@3d24753a]" name="setUp" is-config="true" duration-ms="9239" started-at="2020-02-01T17:44:02Z" finished-at="2020-02-01T17:44:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.qa.test.HomePageTest@3d24753a]" name="setUp" is-config="true" duration-ms="8994" started-at="2020-02-01T18:09:01Z" finished-at="2020-02-01T18:09:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="changeToNewProjectPageTest()[pri:1, instance:com.ats.qa.test.HomePageTest@3d24753a]" name="changeToNewProjectPageTest" duration-ms="4317" started-at="2020-02-01T17:44:11Z" finished-at="2020-02-01T17:44:16Z">
+        <test-method status="PASS" signature="changeToNewProjectPageTest()[pri:1, instance:com.ats.qa.test.HomePageTest@3d24753a]" name="changeToNewProjectPageTest" duration-ms="3971" started-at="2020-02-01T18:09:10Z" finished-at="2020-02-01T18:09:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeToNewProjectPageTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ats.qa.test.HomePageTest@3d24753a]" name="tearDown" is-config="true" duration-ms="746" started-at="2020-02-01T17:44:16Z" finished-at="2020-02-01T17:44:17Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ats.qa.test.HomePageTest@3d24753a]" name="tearDown" is-config="true" duration-ms="764" started-at="2020-02-01T18:09:14Z" finished-at="2020-02-01T18:09:15Z">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,15 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.ats.qa.test.HomePageTest -->
       <class name="com.ats.qa.test.ProjectPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.qa.test.ProjectPageTest@17c68925]" name="setUp" is-config="true" duration-ms="12541" started-at="2020-02-01T17:43:17Z" finished-at="2020-02-01T17:43:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ats.qa.test.ProjectPageTest@17c68925]" name="setUp" is-config="true" duration-ms="11367" started-at="2020-02-01T18:07:36Z" finished-at="2020-02-01T18:07:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="projectCreationTest()[pri:1, instance:com.ats.qa.test.ProjectPageTest@17c68925]" name="projectCreationTest" duration-ms="19673" started-at="2020-02-01T17:43:29Z" finished-at="2020-02-01T17:43:49Z">
+        <test-method status="PASS" signature="projectCreationTest()[pri:1, instance:com.ats.qa.test.ProjectPageTest@17c68925]" name="projectCreationTest" duration-ms="60680" started-at="2020-02-01T18:07:47Z" finished-at="2020-02-01T18:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- projectCreationTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ats.qa.test.ProjectPageTest@17c68925]" name="tearDown" is-config="true" duration-ms="674" started-at="2020-02-01T17:43:49Z" finished-at="2020-02-01T17:43:50Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ats.qa.test.ProjectPageTest@17c68925]" name="tearDown" is-config="true" duration-ms="741" started-at="2020-02-01T18:08:48Z" finished-at="2020-02-01T18:08:48Z">
           <params>
             <param index="0">
               <value>

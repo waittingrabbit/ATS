@@ -13,7 +13,6 @@ import com.ats.qa.util.TakeScreenShot;
 
 public class ProjectPageTest extends TestBase {
 
-	// LoginPage carbonIpmactPage;
 	ProjectPage projectPage;
 	TakeScreenShot tssh;
 

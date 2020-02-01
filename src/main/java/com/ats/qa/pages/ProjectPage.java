@@ -139,7 +139,7 @@ public class ProjectPage extends TestBase {
 		nextBtn2.click();
 
 		finish.click();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 
 		return driver.getCurrentUrl();
 	}
