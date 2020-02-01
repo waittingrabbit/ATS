@@ -138,7 +138,7 @@ public class ProjectPage extends TestBase {
 		buildingtype.click();
 		nextBtn2.click();
 
-		finish.click();
+		clickOn(driver, finish, 3000);
 		Thread.sleep(6000);
 
 		return driver.getCurrentUrl();
