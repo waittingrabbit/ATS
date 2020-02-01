@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Solutions Test Results">
+		<classes>
+			<!-- <class name="com.ats.qa.test.LoginPageTest">
+				<methods>
+					<include name="loginTest"></include>
+				</methods>
+			</class>
+			<class name="com.ats.qa.test.HomePageTest">
+				<methods>
+					<include name="changeToPageNewProjectTest"></include>
+				</methods>
+			</class> -->
+			<class name="com.ats.qa.test.ProjectPageTest">
+				<methods>
+					<include name="projectCreationTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

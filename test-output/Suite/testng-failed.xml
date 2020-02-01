@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Solutions Test Results">
+    <classes>
+      <class name="com.ats.qa.test.ProjectPageTest">
+        <methods>
+          <include name="projectCreationTest"/>
+        </methods>
+      </class> <!-- com.ats.qa.test.ProjectPageTest -->
+    </classes>
+  </test> <!-- Solutions Test Results -->
+</suite> <!-- Failed suite [Suite] -->
