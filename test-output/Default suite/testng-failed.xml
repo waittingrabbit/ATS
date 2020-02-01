@@ -6,4 +6,15 @@
       <class name="com.ats.qa.test.HomePageTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.ats.qa.test.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="changeToPageNewProjectTest"/>
+        </methods>
+      </class> <!-- com.ats.qa.test.HomePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

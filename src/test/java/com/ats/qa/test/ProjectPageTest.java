@@ -2,6 +2,7 @@ package com.ats.qa.test;
 
 import java.io.IOException;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -28,21 +29,17 @@ public class ProjectPageTest extends TestBase {
 	@Test(priority = 1)
 	public void projectCreationTest() throws InterruptedException, IOException {
 		String currentUrl = projectPage.FillForm(prop.getProperty("username"), prop.getProperty("password"));
-		/*
-		 * System.out.println( "After click Finish button, the url is >>" +
-		 * currentUrl);
-		 */
 		String expectedUrl = prop.getProperty("targetedUrl");
-
-		// Failed to take screenshot
-		if (!currentUrl.contains(expectedUrl)) {
-			tssh.takeScreenShot("projectCreationTest", driver);
-		}
 		Assert.assertTrue(currentUrl.contains(expectedUrl), "Failed to create a project!");
 	}
 
 	@AfterMethod
-	public void tearDown() {
+	public void tearDown(ITestResult results) {
+
+		if (ITestResult.FAILURE == results.getStatus()) {
+			tssh.takeScreenShot(driver, results.getName());
+		}
 		driver.quit();
 	}
+
 }

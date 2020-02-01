@@ -1,5 +1,7 @@
 package com.ats.qa.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,12 +32,20 @@ public class ProjectPage extends TestBase {
 	@FindBy(xpath = "//label[text()='State/Province *']//following::input[1]")
 	WebElement stateprovince;
 
+	// dorp down list for state/province
+	@FindBy(xpath = "//label[text()='State/Province *']/following::ul")
+	List<WebElement> stateprovinceDropDown;
+
 	@FindBy(xpath = "//span[text()='Adrar']")
 	WebElement adrar;
 
 	// City
 	@FindBy(xpath = "//label[text()='City *']//following::input[1]")
 	WebElement city;
+
+	// dorp down list for state/province
+	@FindBy(xpath = "//label[text()='City *']/following::ul")
+	List<WebElement> cityDropDown;
 
 	@FindBy(xpath = "//li[@id='react-autowhatever-1--item-2']")
 	WebElement specificCity;
@@ -90,14 +100,29 @@ public class ProjectPage extends TestBase {
 		country.click();
 		algeria.click();
 
-		clickOn(driver, stateprovince, 6000);
-		
+		clickOn(driver, stateprovince, 2000);
+		Thread.sleep(2000);
+
+		// For the dropdown list for state/province is not show up
+		if (stateprovinceDropDown.size() <= 0) {
+			address.click();
+			stateprovince.click();
+		}
+
 		adrar.click();
-		
+
 		clickOn(driver, city, 3000);
 		city.sendKeys("h");
-		clickOn(driver, specificCity, 3000);
 		
+		// For the dropdown list for city is not show up
+		if (cityDropDown.size() <= 0) {
+			address.click();
+			city.click();
+			city.sendKeys("h");
+		}
+		Thread.sleep(2000);
+		clickOn(driver, specificCity, 3000);
+
 		clickOn(driver, address, 3000);
 		address.sendKeys(prop.getProperty("address"));
 
@@ -109,7 +134,6 @@ public class ProjectPage extends TestBase {
 
 		nextBtn.click();
 
-		
 		clickOn(driver, buildingclass, 3000);
 		buildingtype.click();
 		nextBtn2.click();

@@ -42,4 +42,9 @@ public class HomePage extends TestBase {
 	{
 		newProject.click();
 	}
+	
+	public 	boolean elementIsDisplayed()
+	{
+		return newProject.isDisplayed();
+	}
 }

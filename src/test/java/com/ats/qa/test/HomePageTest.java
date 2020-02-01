@@ -1,6 +1,7 @@
 package com.ats.qa.test;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,17 +32,20 @@ public class HomePageTest extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void changeToPageNewProjectTest() {
+	public void changeToNewProjectPageTest() {
 		HomePage homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		String url = homePage.createNewProject();
-		if (!url.equals("https://spec.atsspecsolutions.com/createNewProject")) {
+		/*if (!url.equals("https://spec.atsspecsolutions.com/createNewProject")) {
 			tssh.takeScreenShot("changeToPageNewProjectTest", driver);
-		}
+		}*/
 		Assert.assertEquals(url, "https://spec.atsspecsolutions.com/createNewProject");
 	}
 
 	@AfterMethod
-	public void tearDown() {
+	public void tearDown(ITestResult results) {
+		if (ITestResult.FAILURE == results.getStatus()) {
+			tssh.takeScreenShot(driver, results.getName());
+		}
 		driver.quit();
 	}
 }
